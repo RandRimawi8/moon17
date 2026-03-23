@@ -6,18 +6,37 @@
 
 }
 
-.headers{
+.headers{   /*عملنا ديسبلاي فليكس عشان ال3 ديفات الاساسيات ييجو جنب بعض*/
     display: flex;
     gap:232.5px;
-    
+    padding:21.84px 0;/*بنجيبه عن طريق المسافه بين اطول عنصر اللي هو المون مع حافة الديف*/
 }
-.listiteams{
+.listiteams{/*وهان عشان الروابط يكونو جنب بعض*/
     display:flex;
     gap:24px;
     list-style-type: none;
 }
 .icon{
-     list-style-type: none;
+     list-style-type: none;/*هاي بتشيل النقاط السوداء جنب عناصر الليست اللي بتكون موجوده بشكل تلقائي*/
      display: flex;
      gap: 24px;
+}
+.collections{
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    flex-wrap: wrap;/*هيك في حال كان ويدث الابناء اكبر من السطر بنزل سطر جديد*/
+    padding-bottom: 80px;
+    padding-top: 80px;
+    margin: 0 165px;
+}
+.cards
+{
+    width:calc( (100% - 90px) /4);/*في حال كنا بدنا اياهم الاربعه جنب بعض */
+}
+img{
+    width:100%;
+}
+h2{
+    margin-top:23px ;/*لانشاء مسافه بين النوان والصورة*/
 }
