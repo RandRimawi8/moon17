@@ -1,0 +1,23 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+.headers{
+    display: flex;
+    gap:232.5px;
+    
+}
+.listiteams{
+    display:flex;
+    gap:24px;
+    list-style-type: none;
+}
+.icon{
+     list-style-type: none;
+     display: flex;
+     gap: 24px;
+}
