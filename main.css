@@ -5,15 +5,29 @@
     box-sizing:border-box;
 
 }
+.container{
+    margin:0 165px;
+    width:calc(100% - 230px);
 
-.headers{   /*عملنا ديسبلاي فليكس عشان ال3 ديفات الاساسيات ييجو جنب بعض*/
-    display: flex;
-    gap:232.5px;
-    padding:21.84px 0;/*بنجيبه عن طريق المسافه بين اطول عنصر اللي هو المون مع حافة الديف*/
+}
+.control{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 21.84px;
+    padding-bottom: 21.84px;
+}
+.controlsec2{
+    display:flex;
+    gap:30px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .listiteams{/*وهان عشان الروابط يكونو جنب بعض*/
     display:flex;
-    gap:24px;
+    gap:60px;
     list-style-type: none;
 }
 .icon{
@@ -21,15 +35,7 @@
      display: flex;
      gap: 24px;
 }
-.collections{
-    display: flex;
-    gap: 30px;
-    text-align: center;
-    flex-wrap: wrap;/*هيك في حال كان ويدث الابناء اكبر من السطر بنزل سطر جديد*/
-    padding-bottom: 80px;
-    padding-top: 80px;
-    margin: 0 165px;
-}
+
 .cards
 {
     width:calc( (100% - 90px) /4);/*في حال كنا بدنا اياهم الاربعه جنب بعض */
@@ -38,5 +44,20 @@ img{
     width:100%;
 }
 h2{
-    margin-top:23px ;/*لانشاء مسافه بين النوان والصورة*/
+    margin-top:23px ;/*لانشاء مسافه بين العنوان والصورة*/
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+   font-weight: bold;
+   text-transform: uppercase;/*بخلي كل الحروف كابيتل بدون متحتاج تكتبهم بايدك*/
+   color:#3A3845;
+
 }
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /*typoالرقم اللي بكون موجود فقسم
+    */
+    text-decoration-line: none;/*لازاله الخط تحت النص*/
+    color: #3A3845;/*لتغيير لون النص */
+}
+    
