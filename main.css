@@ -5,9 +5,12 @@
     box-sizing:border-box;
 
 }
+html{
+    --primarycoloor:#3A3845;
+}
 .container{
     margin:0 165px;
-    width:calc(100% - 230px);
+    width:calc(100% - 330px);
 
 }
 .control{
@@ -24,11 +27,13 @@
     text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
+  
 }
 .listiteams{/*وهان عشان الروابط يكونو جنب بعض*/
     display:flex;
     gap:60px;
     list-style-type: none;
+    
 }
 .icon{
      list-style-type: none;/*هاي بتشيل النقاط السوداء جنب عناصر الليست اللي بتكون موجوده بشكل تلقائي*/
@@ -43,21 +48,82 @@
 img{
     width:100%;
 }
-h2{
+.cards h2{
     margin-top:23px ;/*لانشاء مسافه بين العنوان والصورة*/
-    font-family: Arial, Helvetica, sans-serif;
+     font-family: "Inter", sans-serif;
    font-size: 18px;
-   font-weight: bold;
+   font-weight: 600;
    text-transform: uppercase;/*بخلي كل الحروف كابيتل بدون متحتاج تكتبهم بايدك*/
-   color:#3A3845;
+   color:var(--primarycoloor);
 
 }
-a{
-    font-family: Arial, Helvetica, sans-serif;
+.listiteams a{
+     font-family: "Inter", sans-serif;
     font-size: 14px;
     /*typoالرقم اللي بكون موجود فقسم
     */
     text-decoration-line: none;/*لازاله الخط تحت النص*/
-    color: #3A3845;/*لتغيير لون النص */
+    color:var(--primarycoloor);/*لتغيير لون النص */
 }
+
+.controlsec3
+{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.best-sellers .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.seller
+{
+   width:calc((100% - 90px)/4);
+}
+.item-content{
+    margin-top: 24px;
+}
+.item-content h3{
+   font-family: "Inter", sans-serif;
+   font-size: 14px;
+    color:var(--primarycoloor);
+    font-weight:600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom:12px ;
+}
+.item-content p{
+     font-family: "Inter", sans-serif;
+   font-size: 14px;
+    color:var(--primarycoloor);
+    font-weight:400;
+    margin-bottom: 34px;
+    margin-top: 24px;
+}
+.item-content span{
+     font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
     
+}
+h2{
+     font-family: "EB Garamond", serif;
+     font-size: 30px;
+     font-weight: 500;
+     font-style: bold;
+     color:var(--primarycoloor);
+     margin-bottom: 48px;
+}
+button{
+    padding: 15px 81px;
+    background-color: white;
+    letter-spacing: 2px;
+    font-size:12px ;
+    font-weight: 600;
+
+}
